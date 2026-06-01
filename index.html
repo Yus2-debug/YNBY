@@ -4,6 +4,9 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
   <title>云南白药光钻白PRO | 护口有方 钻白闪耀</title>
+  <link rel="preload" as="image" href="assets/brand-logo-horizontal-crop.png">
+  <link rel="preload" as="image" href="assets/product-scene-lite.jpg">
+  <link rel="prefetch" as="image" href="assets/product-pack-lite.png">
   <style>
     :root {
       color-scheme: light;
@@ -1150,7 +1153,7 @@
 
     .product-wrap {
       position: relative;
-      min-height: 248px;
+      min-height: 286px;
       display: grid;
       place-items: center;
       overflow: hidden;
@@ -1200,8 +1203,10 @@
     .product {
       position: relative;
       z-index: 3;
-      width: 38%;
-      max-width: 164px;
+      width: auto;
+      height: 250px;
+      max-width: 70%;
+      object-fit: contain;
       transform: rotate(-6deg);
       filter: drop-shadow(0 22px 24px rgba(36, 111, 121, .16));
       transition: transform .5s ease, filter .5s ease;
@@ -2144,13 +2149,22 @@
 
       .h5 {
         width: 100vw;
+        height: 100vh;
+        height: 100svh;
         height: 100dvh;
-        min-height: 680px;
+        min-height: 0;
         box-shadow: none;
       }
 
       .screen {
         padding: 18px 18px calc(18px + env(safe-area-inset-bottom));
+        overflow-y: auto;
+        overflow-x: hidden;
+        -webkit-overflow-scrolling: touch;
+      }
+
+      .content {
+        justify-content: flex-start;
       }
 
       .music-toggle {
@@ -2161,22 +2175,22 @@
       }
 
       h1 {
-        font-size: 39px;
+        font-size: clamp(32px, 10.4vw, 39px);
       }
 
       h2 {
-        font-size: 30px;
+        font-size: clamp(27px, 8.2vw, 30px);
       }
 
       .hero-art {
-        height: 338px;
+        height: clamp(280px, 48dvh, 338px);
         margin-left: -18px;
         margin-right: -18px;
       }
 
       .hero-photo {
-        right: -118px;
-        width: 492px;
+        right: -92px;
+        width: min(470px, 122vw);
       }
 
       .proof-row {
@@ -2189,7 +2203,7 @@
       }
 
       .scene-card {
-        min-height: 116px;
+        min-height: 108px;
       }
 
       .bubble-zone {
@@ -2213,7 +2227,12 @@
       }
 
       .product-wrap {
-        min-height: 192px;
+        min-height: 260px;
+      }
+
+      .product {
+        height: 228px;
+        max-width: 72%;
       }
 
       .lab-ring {
@@ -2245,7 +2264,7 @@
       }
 
       .poster {
-        min-height: 558px;
+        min-height: auto;
       }
 
       .poster-title {
@@ -2253,7 +2272,7 @@
       }
 
       .poster-art {
-        height: 186px;
+        height: clamp(150px, 27dvh, 186px);
       }
 
       .poster-tags span {
@@ -2263,21 +2282,65 @@
 
     @media (max-height: 760px) {
       .screen {
-        padding-top: 14px;
-        padding-bottom: calc(14px + env(safe-area-inset-bottom));
+        padding-top: 12px;
+        padding-bottom: calc(12px + env(safe-area-inset-bottom));
+      }
+
+      .top {
+        min-height: 38px;
+      }
+
+      .back,
+      .page-index {
+        min-height: 38px;
+      }
+
+      .kicker {
+        margin-top: 8px;
+      }
+
+      h1,
+      h2 {
+        margin-top: 10px;
+      }
+
+      .lead {
+        margin-top: 8px;
+        font-size: 13px;
+        line-height: 1.5;
       }
 
       .hero-art {
-        height: 300px;
+        height: 260px;
       }
 
       .hero-photo {
-        width: 438px;
+        width: 390px;
+        right: -72px;
+      }
+
+      .primary {
+        min-height: 50px;
+        font-size: 16px;
+      }
+
+      .secondary {
+        min-height: 42px;
+        padding: 0 12px;
+      }
+
+      .scene-grid {
+        gap: 8px;
       }
 
       .scene-card {
-        min-height: 104px;
-        padding: 11px;
+        min-height: 92px;
+        padding: 10px;
+      }
+
+      .scene-copy {
+        font-size: 11px;
+        line-height: 1.35;
       }
 
       .scene-icon {
@@ -2304,11 +2367,15 @@
 
       .solution-stage,
       .switch-stage {
-        min-height: 348px;
+        min-height: 324px;
       }
 
       .product-wrap {
-        min-height: 164px;
+        min-height: 224px;
+      }
+
+      .product {
+        height: 196px;
       }
 
       .lab-ring {
@@ -2333,7 +2400,8 @@
       }
 
       .poster {
-        min-height: 510px;
+        min-height: auto;
+        padding: 16px;
       }
 
       .poster-art {
@@ -2369,7 +2437,7 @@
     <section class="screen active" data-screen="intro">
       <div class="top">
         <div class="brand">
-          <img class="brand-logo" src="assets/brand-logo-horizontal-crop.png" alt="云南白药口腔健康">
+          <img class="brand-logo" src="assets/brand-logo-horizontal-crop.png" width="3360" height="513" decoding="async" fetchpriority="high" alt="云南白药口腔健康">
         </div>
         <div class="page-index">01/06</div>
       </div>
@@ -2387,7 +2455,7 @@
           <span class="spark one"></span>
           <span class="spark two"></span>
           <span class="spark three"></span>
-          <img class="hero-photo" src="assets/product-scene.jpg" alt="云南白药光钻白PRO牙膏产品主视觉">
+          <img class="hero-photo" src="assets/product-scene-lite.jpg" width="720" height="720" decoding="async" fetchpriority="high" alt="云南白药光钻白PRO牙膏产品主视觉">
           <div class="proof-row">
             <div class="proof">
               <b>护口</b>
@@ -2489,7 +2557,7 @@
           <span class="doodle smile">咔嚓</span>
           <span class="doodle star">闪</span>
           <span class="clean-shine" aria-hidden="true"></span>
-          <img class="tooth-mini" src="assets/tooth-buddy.svg" alt="牙齿角色">
+          <img class="tooth-mini" src="assets/tooth-buddy.svg" width="178" height="191" decoding="async" alt="牙齿角色">
           <button class="bubble" data-bubble style="--accent:#ff7e73">牙黄</button>
           <button class="bubble" data-bubble style="--accent:#1377b7">牙渍</button>
           <button class="bubble" data-bubble style="--accent:#48c6bd">牙菌斑</button>
@@ -2537,7 +2605,7 @@
             </div>
             <span class="energy-flow left" aria-hidden="true"></span>
             <span class="energy-flow right" aria-hidden="true"></span>
-            <img class="product" src="assets/product-tube-crop.png" alt="云南白药光钻白PRO牙膏">
+            <img class="product" src="assets/product-pack-lite.png" width="620" height="1089" decoding="async" alt="云南白药光钻白PRO牙膏与包装">
             <div class="solution-status" id="solutionStatus" aria-live="polite">待启动</div>
           </div>
           <div class="feature-pair">
@@ -2553,7 +2621,7 @@
             </div>
           </div>
           <div class="aroma-strip">
-            <img src="assets/camellia.svg" alt="雪沁山茶香型">
+            <img src="assets/camellia.svg" width="120" height="120" decoding="async" alt="雪沁山茶香型">
             <span>雪沁山茶香型：白山茶、椒样薄荷与冰岛白茶分层留香，清新不刺激。</span>
           </div>
         </div>
@@ -2607,13 +2675,13 @@
       <div class="poster-wrap">
         <article class="poster" id="poster">
           <div class="poster-head">
-            <img class="poster-brand" src="assets/brand-logo-horizontal-crop.png" alt="云南白药口腔健康">
+            <img class="poster-brand" src="assets/brand-logo-horizontal-crop.png" width="3360" height="513" decoding="async" alt="云南白药口腔健康">
             <div class="poster-badge">高光已开启</div>
           </div>
           <div class="poster-title">我的笑容高光已开启</div>
           <div class="poster-tag" id="posterTag">校园合照发光体</div>
           <div class="poster-art">
-            <img src="assets/product-pack-crop.png" alt="云南白药光钻白PRO牙膏与包装">
+            <img src="assets/product-pack-lite.png" width="620" height="1089" decoding="async" alt="云南白药光钻白PRO牙膏与包装">
           </div>
           <p class="poster-copy" id="posterCopy">先护口，再钻白。让口腔健康成为每一次大方微笑的底气。</p>
           <div class="poster-tags" id="posterTags">
@@ -2808,6 +2876,9 @@
       appState.screen = name;
       screens.forEach((screen) => {
         screen.classList.toggle("active", screen.dataset.screen === name);
+        if (screen.dataset.screen === name) {
+          screen.scrollTop = 0;
+        }
       });
     }
 
@@ -2824,20 +2895,44 @@
       poster: "正在生成你的专属高光海报"
     };
 
-    function showScreenLoader(target, callback) {
+    function waitForImage(image) {
+      if (!image) return Promise.resolve();
+      if (image.complete && image.naturalWidth > 0) {
+        if (image.decode) {
+          return image.decode().catch(() => undefined);
+        }
+        return Promise.resolve();
+      }
+      return new Promise((resolve) => {
+        image.addEventListener("load", resolve, { once: true });
+        image.addEventListener("error", resolve, { once: true });
+      }).then(() => image.decode ? image.decode().catch(() => undefined) : undefined);
+    }
+
+    function waitForImagesIn(container, minimumMs = 0, maximumMs = 2600) {
+      if (!container) return Promise.resolve();
+      const images = Array.from(container.querySelectorAll("img"));
+      const imageReady = Promise.all(images.map(waitForImage));
+      const minimumWait = new Promise((resolve) => window.setTimeout(resolve, minimumMs));
+      const maximumWait = new Promise((resolve) => window.setTimeout(resolve, maximumMs));
+      return Promise.race([Promise.all([imageReady, minimumWait]), maximumWait]);
+    }
+
+    async function showScreenLoader(target, callback) {
       if (transitionBusy) return;
       transitionBusy = true;
       loaderText.textContent = loaderCopy[target] || "正在切换高光任务";
       screenLoader.classList.remove("done");
       screenLoader.classList.add("show");
-      window.setTimeout(() => {
-        callback();
-      }, 320);
-      window.setTimeout(() => {
-        screenLoader.classList.remove("show");
-        screenLoader.classList.add("done");
-        transitionBusy = false;
-      }, 700);
+      await new Promise((resolve) => window.setTimeout(resolve, 280));
+      callback();
+      const targetScreen = document.querySelector(`[data-screen="${target}"]`);
+      if (targetScreen) {
+        await waitForImagesIn(targetScreen, 220, 2600);
+      }
+      screenLoader.classList.remove("show");
+      screenLoader.classList.add("done");
+      transitionBusy = false;
     }
 
     function updateSceneUI() {
@@ -3051,9 +3146,9 @@
     updateSceneUI();
     document.querySelector('[data-scene="photo"]').classList.add("selected");
     document.getElementById("sceneNext").disabled = false;
-    window.setTimeout(() => {
+    waitForImagesIn(document.querySelector('[data-screen="intro"]'), 900, 4200).then(() => {
       loadingScreen.classList.add("done");
-    }, 1050);
+    });
   </script>
 </body>
 </html>
