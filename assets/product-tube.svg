@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="520" viewBox="0 0 1200 520">
+  <defs>
+    <linearGradient id="body" x1="130" x2="935" y1="125" y2="420" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#ffffff"/>
+      <stop offset=".55" stop-color="#f7fffd"/>
+      <stop offset="1" stop-color="#daf7f2"/>
+    </linearGradient>
+    <linearGradient id="brand" x1="186" x2="512" y1="115" y2="382" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#4ed7bc"/>
+      <stop offset=".58" stop-color="#25b6b1"/>
+      <stop offset="1" stop-color="#3189ff"/>
+    </linearGradient>
+    <linearGradient id="cap" x1="915" x2="1105" y1="114" y2="395" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#36d1b8"/>
+      <stop offset="1" stop-color="#148f81"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-35%" width="140%" height="170%">
+      <feDropShadow dx="0" dy="24" stdDeviation="24" flood-color="#1c7481" flood-opacity=".2"/>
+    </filter>
+  </defs>
+  <rect width="1200" height="520" fill="none"/>
+  <g filter="url(#shadow)">
+    <path d="M138 125h765c58 0 105 47 105 105v61c0 58-47 105-105 105H138c-45 0-82-37-82-82V207c0-45 37-82 82-82z" fill="url(#body)"/>
+    <path d="M138 125h765c58 0 105 47 105 105v61c0 58-47 105-105 105H138c-45 0-82-37-82-82V207c0-45 37-82 82-82z" fill="none" stroke="#beeee7" stroke-width="8"/>
+    <rect x="98" y="154" width="386" height="214" rx="58" fill="url(#brand)"/>
+    <path d="M565 167h232c76 0 137 61 137 137v7H565z" fill="#ffffff" opacity=".72"/>
+    <path d="M912 112h155c44 0 80 36 80 80v136c0 44-36 80-80 80H912z" fill="url(#cap)"/>
+    <rect x="967" y="149" width="92" height="222" rx="25" fill="#f8fffd"/>
+    <path d="M995 171h48" stroke="#bcece4" stroke-width="10" stroke-linecap="round"/>
+    <path d="M995 204h48" stroke="#bcece4" stroke-width="10" stroke-linecap="round"/>
+    <path d="M995 237h48" stroke="#bcece4" stroke-width="10" stroke-linecap="round"/>
+    <text x="151" y="228" fill="#fff" font-size="58" font-family="Arial,'Microsoft YaHei'" font-weight="900">光钻白PRO</text>
+    <text x="155" y="292" fill="#ecfffb" font-size="37" font-family="Arial,'Microsoft YaHei'" font-weight="800">护口有方 · 钻白闪耀</text>
+    <text x="556" y="255" fill="#187d79" font-size="39" font-family="Arial,'Microsoft YaHei'" font-weight="900">云南白药口腔</text>
+    <text x="556" y="309" fill="#4e6b70" font-size="31" font-family="Arial,'Microsoft YaHei'" font-weight="700">深度护龈 + 3抗美白</text>
+    <circle cx="824" cy="245" r="31" fill="#fff4c7"/>
+    <path d="M824 205l12 25 27 9-27 10-12 25-13-25-27-10 27-9z" fill="#28bda9"/>
+  </g>
+</svg>

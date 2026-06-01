@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="500" height="500" viewBox="0 0 500 500">
+  <defs>
+    <linearGradient id="petal" x1="101" x2="384" y1="86" y2="410" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#ffffff"/>
+      <stop offset=".72" stop-color="#f6fbff"/>
+      <stop offset="1" stop-color="#dff7fb"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="18" stdDeviation="18" flood-color="#377b8a" flood-opacity=".16"/>
+    </filter>
+  </defs>
+  <rect width="500" height="500" fill="none"/>
+  <g filter="url(#shadow)">
+    <path d="M250 46c47 65 47 104 0 169-47-65-47-104 0-169z" fill="url(#petal)" stroke="#d8f2f5" stroke-width="6"/>
+    <path d="M250 285c47 65 47 104 0 169-47-65-47-104 0-169z" fill="url(#petal)" stroke="#d8f2f5" stroke-width="6"/>
+    <path d="M46 250c65-47 104-47 169 0-65 47-104 47-169 0z" fill="url(#petal)" stroke="#d8f2f5" stroke-width="6"/>
+    <path d="M285 250c65-47 104-47 169 0-65 47-104 47-169 0z" fill="url(#petal)" stroke="#d8f2f5" stroke-width="6"/>
+    <path d="M105 105c79 13 107 41 120 120-79-13-107-41-120-120z" fill="url(#petal)" stroke="#d8f2f5" stroke-width="6"/>
+    <path d="M275 275c79 13 107 41 120 120-79-13-107-41-120-120z" fill="url(#petal)" stroke="#d8f2f5" stroke-width="6"/>
+    <path d="M395 105c-13 79-41 107-120 120 13-79 41-107 120-120z" fill="url(#petal)" stroke="#d8f2f5" stroke-width="6"/>
+    <path d="M225 275c-13 79-41 107-120 120 13-79 41-107 120-120z" fill="url(#petal)" stroke="#d8f2f5" stroke-width="6"/>
+    <circle cx="250" cy="250" r="63" fill="#fff7c9" stroke="#f2cf73" stroke-width="7"/>
+    <circle cx="250" cy="250" r="31" fill="#f7bc4d"/>
+    <circle cx="229" cy="235" r="8" fill="#fff3b6"/>
+    <circle cx="271" cy="235" r="8" fill="#fff3b6"/>
+    <path d="M228 270c14 13 30 13 44 0" fill="none" stroke="#aa7220" stroke-width="8" stroke-linecap="round"/>
+  </g>
+</svg>
